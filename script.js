@@ -6,16 +6,16 @@ document.getElementById('gradeForm').addEventListener('submit', function(event) 
     const result = document.getElementById('result');
     
     if (isNaN(grade)) {
-        result.textContent = 'Digite uma média válida, croquette!';
+        result.textContent = 'Por favor, insira uma média válida!';
         result.style.color = 'red';
         return;
     }
 
     if (grade >= 6) {
-        result.textContent = 'Croquette aprovado!';
-        result.style.color = '#d2691e'; /* marrom crocante */
+        result.textContent = 'Aprovado!';
+        result.style.color = 'green';
     } else {
-        result.textContent = 'Croquette reprovado!';
+        result.textContent = 'Reprovado!';
         result.style.color = 'red';
     }
 });
