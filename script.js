@@ -6,16 +6,16 @@ document.getElementById('gradeForm').addEventListener('submit', function(event) 
     const result = document.getElementById('result');
     
     if (isNaN(grade)) {
-        result.textContent = 'Por favor, insira uma média válida!';
+        result.textContent = 'Por favor, insira uma média válida 💌';
         result.style.color = 'red';
         return;
     }
 
     if (grade >= 6) {
-        result.textContent = 'Aprovado!';
-        result.style.color = 'green';
+        result.textContent = 'Parabéns, você passou com estilo! 🎉';
+        result.style.color = '#d87093'; /* rosa vintage */
     } else {
-        result.textContent = 'Reprovado!';
+        result.textContent = 'Infelizmente, não foi dessa vez 😔';
         result.style.color = 'red';
     }
 });

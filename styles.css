@@ -1,48 +1,82 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Dancing Script', cursive, sans-serif; /* Fonte cursiva para um toque elegante */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f4f8;
+    background-color: #ffe6f0; /* fundo rosa claro */
 }
 
 .container {
     text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    background-color: #fff0f5; /* fundo branco rosado */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
     width: 100%;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Animação de suavidade */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.icon {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #d87093; /* tom rosa vintage */
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-style: italic;
+    color: #c71585; /* tom de magenta leve */
+    margin-bottom: 20px;
+}
+
+label {
+    color: #c71585;
 }
 
 input[type="number"] {
-    padding: 8px;
+    padding: 12px;
     width: 100%;
-    margin: 10px 0;
+    margin: 15px 0;
     box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #c71585;
+    border-radius: 8px;
+    background-color: #fffafc;
+    color: #333;
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #d87093;
     color: white;
     padding: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
     width: 100%;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #c71585;
 }
 
 #result {
-    margin-top: 15px;
+    margin-top: 20px;
     font-weight: bold;
+    font-size: 1.2em;
+    color: #c71585;
 }
