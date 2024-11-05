@@ -20,10 +20,10 @@ document.getElementById('gradeForm').addEventListener('submit', function(event) 
 
     // Define a mensagem com base na média
     if (average >= 6) {
-        result.textContent = `Parabéns, você está aprovada! 🌸 Sua média é ${average.toFixed(1)}`;
+        result.textContent = `Parabéns, você está aprovada(o)! 🌸 Sua média é ${average.toFixed(1)}`;
         result.style.color = '#4b6584'; // Cor azul vintage
     } else {
-        result.textContent = `Infelizmente, você está reprovada. Sua média é ${average.toFixed(1)}`;
+        result.textContent = `Infelizmente, você está reprovada(o). Sua média é ${average.toFixed(1)}`;
         result.style.color = 'red';
     }
 });
