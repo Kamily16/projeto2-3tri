@@ -2,20 +2,9 @@
 document.getElementById('gradeForm').addEventListener('submit', function(event) {
     event.preventDefault();
     
-    const grade = parseFloat(document.getElementById('grade').value);
+    const grade1 = parseFloat(document.getElementById('grade1').value);
+    const grade2 = parseFloat(document.getElementById('grade2').value);
+    const grade3 = parseFloat(document.getElementById('grade3').value);
     const result = document.getElementById('result');
     
-    if (isNaN(grade)) {
-        result.textContent = 'Por favor, insira uma média válida 💌';
-        result.style.color = 'red';
-        return;
-    }
-
-    if (grade >= 60) {
-        result.textContent = 'Parabéns, você passou com estilo! 🎉';
-        result.style.color = '#d87093'; /* rosa vintage */
-    } else {
-        result.textContent = 'Infelizmente, não foi dessa vez 😔';
-        result.style.color = 'red';
-    }
-});
+    if (isNaN(grade1) || isNaN(grade2) || isNaN(grade
