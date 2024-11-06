@@ -1,4 +1,10 @@
 /* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Georgia', serif;
     background-color: #fdf6e4;
@@ -6,7 +12,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
 .container {
@@ -26,11 +31,15 @@ h1 {
 .tagline {
     font-style: italic;
     color: #8c5262;
+    margin-bottom: 15px;
 }
 
 label {
     color: #a94e7b;
     font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 input[type="number"] {
@@ -39,6 +48,7 @@ input[type="number"] {
     margin: 10px 0;
     border: 1px solid #a94e7b;
     border-radius: 8px;
+    font-size: 1em;
 }
 
 button {
@@ -49,6 +59,9 @@ button {
     border-radius: 20px;
     width: 100%;
     font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
