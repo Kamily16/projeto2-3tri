@@ -15,7 +15,7 @@ document.getElementById('gradeForm').addEventListener('submit', function(event) 
 
     const average = (grade1 + grade2 + grade3) / 3;
 
-    if (average >= 6) {
+    if (average >= 60) {
         result.textContent = `Aprovada! Média: ${average.toFixed(1)} `;
         result.style.color = '#a94e7b';
     } else {
